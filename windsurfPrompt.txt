@@ -1,0 +1,18 @@
+I am continuing development of a GPU-accelerated cryptocurrency trading bot project from another system. I have a detailed XML file containing the project's structure, history, and current state. Please analyze the windsurfNotes.xml file to:
+
+1. Understand the project's architecture and current implementation
+2. Familiarize yourself with the existing optimizations and GPU acceleration strategies
+3. Be ready to assist with the next development steps
+
+Key aspects to focus on:
+- The moving average strategy implementation with GPU acceleration using CuPy
+- The parallel optimization framework using multiprocessing
+- The backtesting system architecture
+- Current development status and planned enhancements
+
+After reviewing the XML file, please:
+1. Confirm your understanding of the project
+2. Highlight any areas where you need additional clarification
+3. Suggest which of the planned next steps we should prioritize
+
+I want to ensure you have a complete understanding of the project before we continue development. Please ask any questions if you need more details about specific components or implementations.
