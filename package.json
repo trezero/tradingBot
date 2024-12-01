@@ -1,0 +1,12 @@
+{
+  "name": "python-trading-bot",
+  "private": true,
+  "scripts": {
+    "start": "python src/main.py",
+    "test": "python -m pytest tests/",
+    "backtest": "python src/backtest.py"
+  },
+  "dependencies": {
+    "python-shell": "^5.0.0"
+  }
+}

@@ -1,0 +1,50 @@
+api_keys:
+  binance:
+    api_key: ""  # Set via environment variable
+    secret_key: ""  # Set via environment variable
+
+trading:
+  max_trades_per_day: 20
+  position_size: 100  # USD
+  timeframes:
+    primary: "5m"
+    confirmation: "15m"
+
+risk_management:
+  stop_loss: 1.5  # Percentage
+  take_profit: 3.0  # Percentage
+  trailing_stop: true
+  atr_multiplier: 2.0
+  max_position_size: 1000  # USD
+
+notifications:
+  slack:
+    bot_token: ""  # Set via environment variable
+    channel: "trading-bot"  # Default channel for notifications
+    alerts_channel: "trading-alerts"  # Channel for important alerts
+  telegram:
+    bot_token: ""  # Set via environment variable
+    chat_id: ""  # Set via environment variable
+  email:
+    smtp_server: ""
+    smtp_port: 587
+    username: ""
+    password: ""  # Set via environment variable
+    to_address: ""
+
+webhook_secret: ""  # Set via environment variable
+
+database_url: "sqlite:///trading_bot.db"  # For development, we'll use SQLite
+# For production, you might want to use PostgreSQL:
+# database_url: "postgresql://user:password@localhost:5432/trading_bot"
+
+llama:
+  model: "meta-llama/Llama-2-7b-chat-hf"  # Model identifier
+  parameters:
+    temperature: 0.7
+    max_length: 512
+    do_sample: true
+  optimization:
+    analysis_interval: "1d"  # How often to run strategy optimization
+    min_trades_for_analysis: 20  # Minimum trades before optimization
+    confidence_threshold: 0.8  # Minimum confidence for automated updates
